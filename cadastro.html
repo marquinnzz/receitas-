@@ -1,82 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
- <link rel="stylesheet" href="cadastro.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
-
 <body>
-  <img src="Green Playful Tour and Travel Promo Billboard Web Ad.png" height="400px" width="100%">
- <h1> seja bem vindo ao site de receitas de bolos</h1>
-   <div  class="form-container">
-   <h2>faça sua encomenda</h2>
-  <form action="#" method="post">
+    </style>
+</head>
+<body>
 
-    <!--dados do cliente-->
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
+    <div class=>
+        <h2>Cadastro - Doces Delícia</h2>
+        <form action="https://formspree.io/f/xeogwdqg" method="POST">
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Seu telefone (com DDD)">
+            </div>
+            <div>
+                <label for="tipo_doces">Tipo de Doces Preferidos:</label>
+                <select id="tipo_doces" name="tipo_doces">
+                    <option value="bolo de cenoura">bolo de cenoura</option>
+                    <option value="torta limão">torta limão</option>
+                    <option value="pudim de leite condensado">pudim de leite condensado</option>
+                    <option value="pave de bolacha">pave de bolacha</option>
+                    <option value="musse de maracujá">musse de maracujá</option>
+                     <option value="coxinha de frango">coxinha de frango</option>
+                </select>
+            </div>
+            <div>
+                <label for="comentarios">Comentários ou Sugestões:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe um comentário..."></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
 
-     <label for="endereço">Endereço:</label>
-    <input type="text" id="endereço" name="endereço" required>
+    <div class="footer">
+        <p>&copy; 2025 Doces Delícia | Todos os direitos reservados</p>
+    </div>
 
-     <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone" required>
-
-     <label for="whatsapp">whatsapp:</label>
-    <input type="tel" id="whatsapp" name="whatsapp" required>
-
-    <!--tipo de produto-->
-    <label for="produto">o que deseja encomendar?</label>
-    <select id="produto" name="produto" required>
-       <option value="">selecione uma opção</option>
-       <option value="bolos">bolos</option>
-       <option value="salgados">salgados</option>
-       <option value="sobremesa">sobremesa</option>
-       <option value="outros">outros</option>
-       </select>
-
-      <!-- Descrição do Pedido -->
-<label for="descricao">Descreva seu pedido:</label>
-<textarea id="descricao" name="descricao" rows="4" required></textarea>
-
-<!-- Restrições Alimentares -->
-<label for="restricao">Possui alguma restrição alimentar?</label>
-<textarea id="restricao" name="restricao" rows="2" placeholder="Ex: sem lactose, sem glúten..."></textarea>
-
-<!-- Forma de Pagamento -->
-<label for="pagamento">Forma de pagamento:</label>
-<select id="pagamento" name="pagamento" required>
-  <option value="">Selecione uma opção</option>
-  <option value="pix">Pix</option>
-  <option value="cartao">Cartão de Crédito</option>
-  <option value="boleto">Boleto</option>
-  <option value="dinheiro">Dinheiro na entrega</option>
-</select>
-
-<!-- Data e Hora -->
-<label for="data">Data da encomenda:</label>
-<input type="date" id="data" name="data" required>
-
-<label for="hora">Horário desejado:</label>
-<input type="time" id="hora" name="hora" required>
-
-<!-- Entrega ou Retirada -->
-<label for="entrega">Como deseja receber:</label>
-<select id="entrega" name="entrega" required>
-  <option value="">Selecione uma opção</option>
-  <option value="entrega">Entrega</option>
-  <option value="retirada">Retirada</option>
-</select>
-
-<!-- Botão de envio -->
-<button type="submit">Enviar Pedido</button>
-
-    </form>
-  </div>
-  
+</body>
+</html>
+    
 </body>
 </html>
