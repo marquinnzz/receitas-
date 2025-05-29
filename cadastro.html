@@ -1,58 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
-    <link rel="stylesheet" href="cadastro.css">
-</head>
-<body>
-    </style>
-</head>
-<body>
+    <title>Cadastro de Doces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-    <div class=>
-        <h2>Cadastro - Doces Delícia</h2>
-        <form action="https://formspree.io/f/xwpojzka" method="POST">
-            <div>
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
-            </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
-            </div>
-            <div>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required placeholder="Seu telefone (com DDD)">
-            </div>
-            <div>
-                <label for="tipo_doces">Tipo de Doces Preferidos:</label>
-                <select id="tipo_doces" name="tipo_doces">
-                    <option value="bolo de cenoura">bolo de cenoura</option>
-                    <option value="torta limão">torta limão</option>
-                    <option value="pudim de leite condensado">pudim de leite condensado</option>
-                    <option value="pave de bolacha">pave de bolacha</option>
-                    <option value="musse de maracujá">musse de maracujá</option>
-                     <option value="coxinha de frango">coxinha de frango</option>
-                </select>
-            </div>
-            <div>
-                <label for="comentarios">Comentários ou Sugestões:</label>
-                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe um comentário..."></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Cadastrar">
-            </div>
-        </form>
-    </div>
+        header {
+            background-color: #f39c12;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
 
-    <div class="footer">
-        <p>&copy; 2025 Doces Delícia | Todos os direitos reservados</p>
-    </div>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-</body>
-</html>
-    
-</body>
-</html>
+        h2 {
+            text-align: center;
+            color: #f39c12;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="number"], textarea{
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
