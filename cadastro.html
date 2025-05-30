@@ -1,51 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Doces</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>encomendas</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="cadastro.css">
+  
+</head>
 
-        header {
-            background-color: #f39c12;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+<body>
+  <img src="Green Playful Tour and Travel Promo Billboard Web Ad.png" height="400px" width="100%">
+<div class="form-container">
+  <h2>Faça sua Encomenda</h2>
+  <form action="#" method="post">
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+    <!-- Dados do Cliente -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
 
-        h2 {
-            text-align: center;
-            color: #f39c12;
-        }
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required>
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
 
-        label {
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+    <label for="whatsapp">WhatsApp:</label>
+    <input type="tel" id="whatsapp" name="whatsapp" required>
 
-        input[type="text"], input[type="number"], textarea{
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-        }
+    <!-- Tipo de Produto -->
+    <label for="produto">O que deseja encomendar?</label>
+    <select id="produto" name="produto" required>
+      <option value="">Selecione uma opção</option>
+      <option value="bolos">Bolos</option>
+      <option value="salgados">Salgados</option>
+      <option value="sobremesa">Sobremesa</option>
+      <option value="outros">Outros</option>
+    </select>
+<!-- Descrição do Pedido -->
+<label for="descricao">Descreva seu pedido:</label>
+<textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+<!-- Restrições Alimentares -->
+<label for="restricao">Possui alguma restrição alimentar?</label>
+<textarea id="restricao" name="restricao" rows="2" placeholder="Ex: sem lactose, sem glúten..."></textarea>
+
+<!-- Forma de Pagamento -->
+<label for="pagamento">Forma de pagamento:</label>
+<select id="pagamento" name="pagamento" required>
+  <option value="">Selecione uma opção</option>
+  <option value="pix">Pix</option>
+  <option value="cartao">Cartão de Crédito</option>
+  <option value="boleto">Boleto</option>
+  <option value="dinheiro">Dinheiro na entrega</option>
+</select>
+<!-- Data e Hora -->
+<label for="data">Data da encomenda:</label>
+<input type="date" id="data" name="data" required>
+
+<label for="hora">Horário desejado:</label>
+<input type="time" id="hora" name="hora" required>
+
+<!-- Entrega ou Retirada -->
+<label for="entrega">Como deseja receber:</label>
+<select id="entrega" name="entrega" required>
+  <option value="">Selecione uma opção</option>
+  <option value="entrega">Entrega</option>
+  <option value="retirada">Retirada</option>
+</select>
+
+<!-- Botão de envio -->
+<button type="submit">Enviar Pedido</button>
+
+  </form>
+</div>
